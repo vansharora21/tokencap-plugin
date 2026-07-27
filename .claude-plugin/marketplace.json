@@ -1,0 +1,14 @@
+{
+  "name": "tokencap-official",
+  "owner": {
+    "name": "VanshArora21"
+  },
+  "plugins": [
+    {
+      "name": "tokencap",
+      "source": "./plugins/claude",
+      "description": "Official TokenCap v1.7.0 Smart Context & MCP Integration for Claude Code.",
+      "version": "1.7.0"
+    }
+  ]
+}
