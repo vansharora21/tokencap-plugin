@@ -1,7 +1,7 @@
 {
   "name": "tokencap-context",
-  "version": "1.7.0",
-  "description": "Official TokenCap v1.7.0 Self-Loading Universal Context Layer plugin for OpenAI Codex & AI coding agents.",
+  "version": "2.5.0",
+  "description": "Official TokenCap v2.5.0 Self-Loading Universal Context Layer plugin for OpenAI Codex & AI coding agents.",
   "author": {
     "name": "VanshArora21",
     "url": "https://github.com/vansharora21"

@@ -34,4 +34,4 @@ if (-not $SkipClaude -and (Require-Command "claude" "Install Claude Code CLI to 
   claude plugin install tokencap@tokencap-official
 }
 
-Write-Host "TokenCap Plugins setup complete! Run 'tokencap make --full' in any project to initialize context." -ForegroundColor Green
+Write-Host "TokenCap Plugins setup complete! Run 'tokencap make' in any project to initialize context." -ForegroundColor Green

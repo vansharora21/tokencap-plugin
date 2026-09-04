@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "tokencap": {
+      "command": "tokencap",
+      "args": ["mcp"],
+      "env": {}
+    }
+  }
+}

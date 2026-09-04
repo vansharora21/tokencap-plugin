@@ -1,6 +1,6 @@
 ---
 name: smart-context
-description: Retrieve token-optimized codebase context using TokenCap v1.7.0 Smart Context engine. Use when asking questions about codebase implementation, dependencies, or logic.
+description: Retrieve token-optimized codebase context using TokenCap v2.5.0 Smart Context engine. Use when asking questions about codebase implementation, dependencies, or logic.
 ---
 
 # TokenCap Smart Context Skill
@@ -14,10 +14,17 @@ This skill provides deep, token-optimized context retrieval for Claude Code by c
 
 ## Workflow
 
-1. Execute query against local TokenCap MCP server tool `tokencap_ask` or run CLI:
+1. Execute query via CLI:
    ```bash
    tokencap ask "<question>"
    ```
+   Or call local TokenCap MCP tools:
+   - `tokencap_search` - Multi-source ranked search across clusters, files, constitution rules, and graph nodes
+   - `tokencap_files` - Locate relevant files ranked by relevance, graph connectivity, recency, and risk
+   - `tokencap_overview` - High-level repo summary and cluster status
+   - `tokencap_cluster` - Deep dive into a specific domain cluster
+   - `tokencap_constitution` - Retrieve governing architecture and security rules
+
 2. TokenCap automatically runs multi-source relevance scoring across:
    - **Knowledge Graph** (caller / callee edges)
    - **Brain Memory & Notes**

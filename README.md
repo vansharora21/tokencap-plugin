@@ -1,17 +1,27 @@
-# TokenCap Plugins (`tokencap-plugin`)
+# TokenCap Host Plugins (`tokencap-plugin`)
 
-Official host plugin integrations for **TokenCap v1.7.0** (Claude Code, OpenAI Codex, Cursor, Windsurf, Antigravity).
+Official host plugin integrations for **TokenCap v2.5.0** (Claude Code, OpenAI Codex, Cursor, Windsurf, Antigravity).
 
 Stop teaching every AI your codebase. TokenCap host plugins connect your favorite AI coding agents directly to TokenCap's **Self-Loading Universal Context Layer** and **Local MCP Server**.
 
 ---
 
-## Supported Plugins
+## Supported Plugins & Capabilities
 
-| Plugin | Target Host | Description | Marketplace Location |
-| --- | --- | --- | --- |
-| `tokencap` | **Claude Code** | Native smart context, impact analysis skills, and MCP tools | `.claude-plugin/marketplace.json` |
-| `tokencap-context` | **Codex** | Self-loading codebase context layer (`.tokencap/agent/START_HERE.md`) | `.agents/plugins/marketplace.json` |
+| Plugin | Target Host | Included Skills | MCP Server | Marketplace Manifest |
+| :--- | :--- | :--- | :--- | :--- |
+| `tokencap` | **Claude Code** | `smart-context`, `impact-analysis`, `constitution`, `adr-management`, `security-scan` | Auto-spawned stdio (`tokencap mcp`) | `.claude-plugin/marketplace.json` |
+| `tokencap-context` | **OpenAI Codex** | `tokencap-context` (Zero-crawler self-loading context) | Local CLI / MCP | `.agents/plugins/marketplace.json` |
+
+---
+
+## Included Skills
+
+1. **`smart-context`**: High-relevance, token-optimized context retrieval across Knowledge Graphs, AST summaries, and Diff history.
+2. **`impact-analysis`**: Calculates blast radius, downstream consumers, and risk ratings prior to file edits.
+3. **`constitution`**: Verifies layer boundaries (Routes $\rightarrow$ Service $\rightarrow$ DB) and architecture rules.
+4. **`adr-management`**: Read, write, and persist Architecture Decision Records across independent conversation sessions.
+5. **`security-scan`**: Scans for secret leaks, redactions, and source-to-sink untrusted taint flows.
 
 ---
 
@@ -34,7 +44,7 @@ chmod +x ./install-plugins.sh
 
 ---
 
-### Option 2: Manual Installation via Marketplace
+### Option 2: Manual Marketplace Installation
 
 #### 1. Claude Code Plugin
 
@@ -58,9 +68,9 @@ codex plugin add tokencap-context@tokencap-official
 
 ## How It Works
 
-1. **Local Intelligence First**: TokenCap runs entirely on your machine (`tokencap make`), generating zero-egress context snapshots in `.tokencap/`.
-2. **MCP Integration**: The Claude Code plugin connects to the local `tokencap mcp` server endpoint without sending repository data to external cloud services.
-3. **Self-Loading Context**: Codex automatically reads `.tokencap/agent/START_HERE.md` to navigate project architecture, dependencies, and risk maps without costly repository rescans.
+1. **Zero Egress & Local Intelligence**: TokenCap executes entirely locally (`tokencap make`), emitting localized structured context in `.tokencap/`.
+2. **Auto-Wired MCP Protocol**: The Claude Code plugin automatically wires `.mcp.json` to the local `tokencap mcp` process on startup.
+3. **Self-Loading Context Layer**: Agents load `.tokencap/agent/START_HERE.md` and consult `allowed-context.json` to instantly target relevant code without costly full-repository crawling.
 
 ---
 
