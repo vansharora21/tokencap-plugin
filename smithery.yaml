@@ -1,0 +1,11 @@
+# Smithery configuration for TokenCap Host Plugins
+# https://smithery.ai/docs/config
+
+startCommand:
+  type: stdio
+  config:
+    command: npx
+    args:
+      - "-y"
+      - "tokencap"
+      - "mcp"
