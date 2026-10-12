@@ -8,4 +8,5 @@ startCommand:
     args:
       - "-y"
       - "tokencap"
-      - "mcp"
+      - "serve"
+      - "--mcp"

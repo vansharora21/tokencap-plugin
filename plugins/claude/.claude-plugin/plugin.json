@@ -1,7 +1,7 @@
 {
   "name": "tokencap",
-  "version": "2.5.0",
-  "description": "Official TokenCap v2.5.0 plugin for Claude Code. Connects local tokencap MCP tools and smart context retrieval workflows.",
+  "version": "2.9.0",
+  "description": "Official TokenCap v2.9.0 plugin for Claude Code. Connects local tokencap MCP tools (contract v2) and smart context, review, and session handoff workflows.",
   "author": {
     "name": "VanshArora21",
     "url": "https://github.com/vansharora21"
