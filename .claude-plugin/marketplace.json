@@ -3,12 +3,15 @@
   "owner": {
     "name": "VanshArora21"
   },
+  "metadata": {
+    "description": "TokenCap plugins: local codebase context and MCP tools for AI coding agents."
+  },
   "plugins": [
     {
       "name": "tokencap",
       "source": "./plugins/claude",
-      "description": "Official TokenCap v2.5.0 Smart Context & MCP Integration for Claude Code.",
-      "version": "2.5.0"
+      "description": "Local codebase context and MCP tools for Claude Code.",
+      "version": "3.3.0"
     }
   ]
 }

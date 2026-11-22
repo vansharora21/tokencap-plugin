@@ -1,6 +1,6 @@
 ---
 name: security-scan
-description: Perform secret scanning, redaction verification, and source-to-sink taint analysis before committing changes using TokenCap v2.5.0.
+description: Perform secret scanning, redaction verification, and source-to-sink taint analysis before committing changes using TokenCap.
 ---
 
 # TokenCap Security Scan Skill
@@ -16,13 +16,17 @@ Ensures no leaked API keys, tokens, or untrusted source-to-sink tainted data flo
 
 1. Run secret scan via CLI:
    ```bash
-   tokencap security scan
+   tokencap analyze security scan
    ```
 2. Run full repository security audit:
    ```bash
-   tokencap security audit
+   tokencap analyze security audit
    ```
-3. Check returned findings:
+3. Run static source-to-sink taint analysis:
+   ```bash
+   tokencap analyze taint
+   ```
+4. Check returned findings:
    - **Secret Leaks**: Hardcoded credentials, private keys, or API tokens.
    - **Taint Flows**: User input passed directly into sensitive sinks (e.g. `eval`, SQL queries, raw shell commands).
-4. Remediate flagged issues immediately before proceeding.
+5. Remediate flagged issues immediately before proceeding. Findings are evidence, not verdicts; confirm each one in source.

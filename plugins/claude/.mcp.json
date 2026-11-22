@@ -2,7 +2,7 @@
   "mcpServers": {
     "tokencap": {
       "command": "tokencap",
-      "args": ["mcp"],
+      "args": ["serve", "--mcp"],
       "env": {}
     }
   }
