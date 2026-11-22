@@ -1,6 +1,6 @@
 ---
 name: change-review
-description: Build an evidence-backed local review of working-tree, staged, or base-ref changes with risk findings and test gaps using TokenCap v2.9.0. Use before committing or opening a pull request.
+description: Build an evidence-backed local review of working-tree, staged, or base-ref changes with risk findings and test gaps using TokenCap. Use before committing or opening a pull request.
 ---
 
 # TokenCap Change Review Skill

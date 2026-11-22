@@ -1,6 +1,6 @@
 ---
 name: session-handoff
-description: Stage a redacted, reviewable summary of the current coding session and export it for the next agent using TokenCap v2.9.0. Use when finishing a task or handing work to another session.
+description: Stage a redacted, reviewable summary of the current coding session and export it for the next agent using TokenCap. Use when finishing a task or handing work to another session.
 ---
 
 # TokenCap Session Handoff Skill

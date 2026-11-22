@@ -1,6 +1,6 @@
 ---
 name: constitution
-description: Verify architecture boundaries, framework conventions, and hard project rules using TokenCap v2.9.0 Constitution Engine. Use before writing or refactoring code.
+description: Verify architecture boundaries, framework conventions, and hard project rules using TokenCap Constitution Engine. Use before writing or refactoring code.
 ---
 
 # TokenCap Constitution Skill

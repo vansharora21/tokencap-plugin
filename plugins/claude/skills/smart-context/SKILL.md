@@ -1,6 +1,6 @@
 ---
 name: smart-context
-description: Retrieve token-optimized codebase context using TokenCap v2.9.0 Smart Context engine. Use when asking questions about codebase implementation, dependencies, or logic.
+description: Retrieve token-optimized codebase context using TokenCap Smart Context engine. Use when asking questions about codebase implementation, dependencies, or logic.
 ---
 
 # TokenCap Smart Context Skill

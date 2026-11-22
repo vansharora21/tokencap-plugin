@@ -1,16 +1,19 @@
 {
   "name": "tokencap",
-  "version": "2.9.0",
-  "description": "Official TokenCap v2.9.0 plugin for Claude Code. Connects local tokencap MCP tools (contract v2) and smart context, review, and session handoff workflows.",
+  "version": "3.3.0",
+  "description": "Local codebase context for Claude Code. Connects TokenCap's MCP tools and adds skills for task context, impact analysis, architecture rules, change review, security scans and session handoff. Requires the TokenCap CLI (npm install -g tokencap).",
   "author": {
     "name": "VanshArora21",
     "url": "https://github.com/vansharora21"
   },
+  "homepage": "https://tokencap.vansharora.app",
+  "repository": "https://github.com/vansharora21/tokencap-plugin",
   "license": "MIT",
   "keywords": [
     "claude-code",
     "tokencap",
     "context-retrieval",
+    "codebase-context",
     "mcp"
   ]
 }

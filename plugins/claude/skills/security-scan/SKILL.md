@@ -1,6 +1,6 @@
 ---
 name: security-scan
-description: Perform secret scanning, redaction verification, and source-to-sink taint analysis before committing changes using TokenCap v2.9.0.
+description: Perform secret scanning, redaction verification, and source-to-sink taint analysis before committing changes using TokenCap.
 ---
 
 # TokenCap Security Scan Skill

@@ -1,6 +1,6 @@
 ---
 name: adr-management
-description: Read, record, and maintain persistent Architecture Decision Records (ADRs) across AI coding sessions using TokenCap v2.9.0.
+description: Read, record, and maintain persistent Architecture Decision Records (ADRs) across AI coding sessions using TokenCap.
 ---
 
 # TokenCap ADR Management Skill

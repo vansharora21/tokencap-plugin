@@ -1,6 +1,6 @@
 ---
 name: impact-analysis
-description: Perform risk assessment and dependency impact analysis for files or clusters before executing changes using TokenCap v2.9.0.
+description: Perform risk assessment and dependency impact analysis for files or clusters before executing changes using TokenCap.
 ---
 
 # TokenCap Impact Analysis Skill
